@@ -1,0 +1,19 @@
+{
+  "name": "vue3-auth0",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.10.0",
+    "tailwindcss": "^1.5.1",
+    "vue": "^3.0.0-rc.1",
+    "vue-router": "^4.0.0-beta.2",
+    "vuex": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "vite": "^1.0.0-rc.1"
+  }
+}
