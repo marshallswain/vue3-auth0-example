@@ -19,7 +19,7 @@ The primary challenge with getting this to work comes from working with `vue-rou
 - `createWebHistory` uses pushState routing
 - `createWebHashHistory` uses hash-based routing `/#/`
 
-The challenge (which is likely a bug) is that when using web hash history, the `search` part of the url is removed from the URL.  This happens upon using `import` on the `vue-router` package.  This makes it challenging for the Auth0 client library to access the `code` and `state` params from the OAuth callback URL. At least, not without doing a decent workaround.
+The challenge (which is likely a bug) is that when using web hash history, the `search` part of the url is removed from the URL [here](https://github.com/vuejs/vue-router-next/blob/master/src/history/html5.ts#L48).  This happens so quickly that it's difficult for the Auth0 client library to access the `code` and `state` params from the OAuth callback URL. At least, not without doing a decent workaround.
 
 The workaround to get web hash history working with Auth0 client library was to 
 
