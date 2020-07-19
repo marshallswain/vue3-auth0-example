@@ -1,6 +1,6 @@
 # Using Vue3 with Auth0
 
-This repo demonstrates how to get Auth0 auth running in VueJS 3.0 application and `createWebHashHistory`.
+This repo demonstrates how to get Auth0 auth running in VueJS 3.0 application with vue-router's `createWebHashHistory`.
 
 To use this repo, you'll need to add a `.env` file to the project root and add two variables
 
